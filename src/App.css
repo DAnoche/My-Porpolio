@@ -137,6 +137,12 @@ label:active:after {
 }
 
 /* Hero Sectino */
-.hero-content {
-  color: var(--textColor);
+.hero {
+  background: url("/public/assets/hero-bg.jpg");
+  height: 95vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
 }
