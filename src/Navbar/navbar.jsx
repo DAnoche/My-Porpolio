@@ -34,7 +34,7 @@ function Navbar() {
     <nav className={`navbar navbar-expand-md mt-3 ${theme}`}>
       <div className="container">
         <a href="/" className="nav-logo navbar-brand">
-          DAN
+          &lt;/&gt; DAN
         </a>
         <button
           className="navbar-toggler"
