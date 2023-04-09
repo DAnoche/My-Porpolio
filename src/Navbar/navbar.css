@@ -1,3 +1,26 @@
+.nav-logo {
+  color: whitesmoke;
+}
+
+.nav-logo:hover {
+  color: #00ffff;
+}
+
 .nav-ul-dark a {
-  color: whitesmoke !important;
+  color: whitesmoke;
+}
+
+.nav-ul-dark a:hover {
+  color: #00ffff;
+  border-top: #00ffff solid 2px;
+}
+
+.nav-theme-icon {
+  color: whitesmoke;
+  padding-left: 1em;
+  cursor: pointer;
+}
+
+.nav-theme-icon:hover {
+  color: #00ffff;
 }
