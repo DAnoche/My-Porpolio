@@ -147,3 +147,20 @@ label:active:after {
   position: relative;
   margin-top: 15em;
 }
+
+.hero-header {
+  color: var(--textColor);
+}
+
+.hero-header:hover {
+  color: var(--secondaryColor);
+}
+
+.hero-links a:hover {
+  scale: 0.75;
+}
+
+.hero-social-links {
+  font-size: 1.5em;
+  color: var(--textColor);
+}
