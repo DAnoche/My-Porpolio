@@ -145,4 +145,5 @@ label:active:after {
   background-repeat: no-repeat;
   overflow: hidden;
   position: relative;
+  margin-top: 15em;
 }
