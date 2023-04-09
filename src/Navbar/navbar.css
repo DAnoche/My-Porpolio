@@ -1,26 +1,26 @@
 .nav-logo {
-  color: whitesmoke;
+  color: var(--textColor);
 }
 
 .nav-logo:hover {
-  color: #00ffff;
+  color: var(--textColorHighlight);
 }
 
 .nav-ul-dark a {
-  color: whitesmoke;
+  color: var(--textColor);
 }
 
 .nav-ul-dark a:hover {
-  color: #00ffff;
-  border-top: #00ffff solid 2px;
+  color: var(--textColorHighlight);
+  border-top: var(--textColorHighlight) solid 2px;
 }
 
 .nav-theme-icon {
-  color: whitesmoke;
+  color: var(--textColor);
   padding-left: 1em;
   cursor: pointer;
 }
 
 .nav-theme-icon:hover {
-  color: #00ffff;
+  color: var(--textColorHighlight);
 }
