@@ -7,31 +7,15 @@ import {
   faSun,
 } from "@fortawesome/free-solid-svg-icons";
 
-function Navbar() {
+function Navbar(props) {
   const [collapsed, setCollapsed] = useState(true);
-  const [theme, setTheme] = useState("dark");
 
   const toggleCollapse = () => {
     setCollapsed(!collapsed);
   };
 
-  const toggleTheme = () => {
-    const updatedTheme = theme === "dark" ? "light" : "dark";
-    setTheme(updatedTheme);
-    document.documentElement.setAttribute("data-theme", updatedTheme);
-    localStorage.setItem("theme", updatedTheme);
-  };
-
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) {
-      setTheme(savedTheme);
-      document.documentElement.setAttribute("data-theme", savedTheme);
-    }
-  }, []);
-
   return (
-    <nav className={`navbar navbar-expand-md mt-3 ${theme}`}>
+    <nav className={`navbar navbar-expand-md mt-3 ${props.theme}`}>
       <div className="container">
         <a href="/" className="nav-logo navbar-brand">
           &lt;/&gt; DAN
@@ -71,11 +55,13 @@ function Navbar() {
             </li>
             <li
               className="nav-item d-flex justify-contents-start align-items-center"
-              onClick={toggleTheme}
+              onClick={props.toggleTheme}
             >
               <span className="nav-theme-icon">
-                <FontAwesomeIcon icon={theme === "dark" ? faMoon : faSun} />
-                &nbsp;{theme === "dark" ? "Dark" : "Light"}
+                <FontAwesomeIcon
+                  icon={props.theme === "dark" ? faMoon : faSun}
+                />
+                &nbsp;{props.theme === "dark" ? "Dark" : "Light"}
               </span>
             </li>
           </ul>
