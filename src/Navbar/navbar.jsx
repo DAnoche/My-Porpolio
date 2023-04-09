@@ -1,53 +1,42 @@
 import React from "react";
+import "./navbar.css";
 
 function Navbar() {
   return (
     <>
-      <div className="container">
-        <header className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
           <a
             href="/"
-            className="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none fw-bold"
+            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-light text-decoration-none fs-4"
           >
-            &lt;DAN /&gt;
+            DAN.
           </a>
-
-          <ul className="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li>
-              <a href="#" className="nav-link px-2 link-secondary">
-                Home
+          <ul class="nav-ul-dark nav nav-pills">
+            <li class="nav-item">
+              <a href="#About-me" class="nav-link">
+                ABOUT ME
               </a>
             </li>
-            <li>
-              <a href="#" className="nav-link px-2 link-dark">
-                Features
+            <li class="nav-item">
+              <a href="#Project" class="nav-link">
+                PROJECTS
               </a>
             </li>
-            <li>
-              <a href="#" className="nav-link px-2 link-dark">
-                Pricing
+            <li class="nav-item">
+              <a href="#Contact" class="nav-link">
+                CONTACT
               </a>
             </li>
-            <li>
-              <a href="#" className="nav-link px-2 link-dark">
-                FAQs
-              </a>
+            <li class="nav-item me-2">
+              <button class="btn btn-primary">RESUME</button>
             </li>
-            <li>
-              <a href="#" className="nav-link px-2 link-dark">
-                About
-              </a>
+            <li class="nav-item">
+              <button class="btn btn-secondary">
+                <i class="fas fa-moon"></i>
+              </button>
             </li>
           </ul>
-
-          <div className="col-md-3 text-end">
-            <button type="button" className="btn btn-outline-primary me-2">
-              RESUME
-            </button>
-            <button type="button" className="btn btn-primary">
-              Dark Mode
-            </button>
-          </div>
         </header>
       </div>
     </>
