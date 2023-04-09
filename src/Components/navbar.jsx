@@ -20,7 +20,7 @@ function Navbar(props) {
   };
 
   return (
-    <nav className={`navbar navbar-expand-md mt-3 ${props.theme}`}>
+    <nav className={`navbar navbar-expand-md pt-3 fixed-top ${props.theme}`}>
       <div className="container">
         <a href="/" className="nav-logo navbar-brand">
           &lt;/&gt; DAN
