@@ -13,3 +13,54 @@
   --textColor: #eee;
   --textColorHighlight: #2b6abc;
 }
+
+/* Navbar */
+
+.nav-logo {
+  color: var(--textColor);
+}
+
+.nav-logo:hover {
+  color: var(--textColorHighlight);
+}
+
+.nav-ul-dark a {
+  color: var(--textColor);
+}
+
+.nav-ul-dark a:hover {
+  color: var(--textColorHighlight);
+  border-top: var(--textColorHighlight) solid 2px;
+}
+
+.nav-theme-icon {
+  color: var(--textColor);
+  cursor: pointer;
+}
+
+.nav-theme-icon:hover {
+  color: var(--textColorHighlight);
+}
+
+.nav-toggler {
+  color: var(--textColor);
+}
+
+.nav-toggler:hover {
+  color: var(--textColorHighlight);
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@media only screen and (max-width: 425px) {
+  .nav-theme-icon {
+    border-top: 1px solid var(--textColorHighlight);
+    width: 100%;
+    margin-top: 1.25em;
+    padding: 0.5em;
+    text-align: center;
+  }
+}
