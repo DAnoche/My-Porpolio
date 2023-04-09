@@ -143,7 +143,7 @@ label:active:after {
 /* Hero Section */
 .hero {
   background-color: var(--mainColor);
-  height: 95vh;
+  height: 50vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -161,12 +161,12 @@ label:active:after {
 }
 
 .hero-header:hover {
-  color: var(--secondaryColor);
+  color: var(--textColorBlobs);
 }
 
 .hero-social-links:hover {
   scale: 1.5;
-  color: dodgerblue;
+  color: var(--textColorBlobs);
 }
 
 .hero-social-links {
@@ -176,7 +176,7 @@ label:active:after {
 
 .hero-btn {
   padding: 0.5em;
-  background-color: var(--secondaryColor);
+  background-color: var(--textColorBlobs);
   border: none;
   color: #eee;
   padding: 12px 30px;
@@ -185,10 +185,31 @@ label:active:after {
 }
 
 .hero-btn:hover {
-  background-color: dodgerblue;
+  background-color: var(--textColorBlobs);
   border-radius: 20px;
 }
 
 .hero-download {
   background: transparent;
+}
+
+.custom-shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: -1;
+}
+
+.custom-shape svg {
+  position: relative;
+  display: block;
+  width: calc(200% + 1.3px);
+  height: 250px;
+}
+
+.custom-shape .shape-fill {
+  fill: var(--textColorBlobs);
 }

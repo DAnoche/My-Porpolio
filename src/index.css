@@ -22,6 +22,7 @@ code {
   --secondaryColor: #0c53a6;
   --textColor: #eee;
   --textColorHighlight: #2b6abc;
+  --textColorBlobs: #5dc0c7;
 }
 
 [data-theme="light"] {
@@ -30,4 +31,5 @@ code {
   --secondaryColor: #0c53a6;
   --textColor: #141414;
   --textColorHighlight: #003d82;
+  --textColorBlobs: #6fbdba;
 }
