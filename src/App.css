@@ -3,8 +3,11 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: var(--mainColor);
   font-family: "Poppins", sans-serif;
+}
+
+html {
+  background-color: var(--mainColor);
 }
 
 /* Navbar */
@@ -137,9 +140,9 @@ label:active:after {
   width: 40px;
 }
 
-/* Hero Sectino */
+/* Hero Section */
 .hero {
-  /* background: url("/public/assets/hero-bg.jpg"); */
+  background-color: var(--mainColor);
   height: 95vh;
   background-size: cover;
   background-position: center;
