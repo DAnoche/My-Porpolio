@@ -71,16 +71,16 @@ function Navbar(props) {
                 checked={props.theme === "dark"}
                 onChange={props.toggleTheme}
               />
-              <label for="switch"></label>
+              <label htmlFor="switch"></label>
             </li>
           </ul>
           {/* Social Links and Contact Info */}
           <div className="nav-social text-center d-block d-md-none">
             <p className="lead ms-2">My Social Links.</p>
-            <div class="nav-social container">
-              <div class="row">
-                <div class="col-md-12">
-                  <span class="d-block mb-3">
+            <div className="nav-social container">
+              <div className="row">
+                <div className="col-md-12">
+                  <span className="d-block mb-3">
                     <a
                       href="https://www.facebook.com/DietherNoche"
                       target="_blank"
@@ -92,7 +92,7 @@ function Navbar(props) {
                       Facebook
                     </a>
                   </span>
-                  <span class="d-block mb-3">
+                  <span className="d-block mb-3">
                     <a
                       href="https://www.linkedin.com/in/diether-noche-010356145/"
                       target="_blank"
@@ -104,7 +104,7 @@ function Navbar(props) {
                       LinkedIn
                     </a>
                   </span>
-                  <span class="d-block mb-3">
+                  <span className="d-block mb-3">
                     <a href="https://github.com/DAnoche" target="_blank">
                       <FontAwesomeIcon
                         icon={["fab", "github"]}
@@ -119,18 +119,18 @@ function Navbar(props) {
           </div>
           <div className="nav-social text-center d-block d-md-none">
             <p className="lead ms-2 mt-3">Contact Details.</p>
-            <div class="nav-social container">
-              <div class="row">
-                <div class="col-md-12">
-                  <span class="d-block mb-3">
+            <div className="nav-social container">
+              <div className="row">
+                <div className="col-md-12">
+                  <span className="d-block mb-3">
                     <FontAwesomeIcon icon={["fas", "envelope"]} />
                     &nbsp;diether.noche@gmail.com
                   </span>
-                  <span class="d-block mb-3">
+                  <span className="d-block mb-3">
                     <FontAwesomeIcon icon={["fas", "phone"]} />
                     &nbsp;(+63)955 055 5469
                   </span>
-                  <span class="d-block mb-3">
+                  <span className="d-block mb-3">
                     <FontAwesomeIcon icon={["fas", "map-marker-alt"]} />
                     &nbsp;Batangas, Philippines
                   </span>

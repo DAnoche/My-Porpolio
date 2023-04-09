@@ -1,11 +1,6 @@
 import React from "react";
+import Typewriter from "typewriter-effect";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBars,
-  faTimes,
-  faMoon,
-  faSun,
-} from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
@@ -18,10 +13,19 @@ function HeroSection(props) {
       <div className="container p-3">
         <div className="row justify-content-center align-items-center text-center text-md-start">
           <div className="col-md-5 text-center text-md-start">
-            <h1>
-              <p className="hero-header display-2 fw-bold">
-                Front End Developer.
-              </p>
+            <h1 className="hero-header display-2 fw-bold">
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString("Hi!, I`m DIETHER,")
+                    .pauseFor(1000)
+                    .deleteAll()
+                    .typeString("Front End Developer.")
+                    .pauseFor(2000)
+                    .pauseFor(1000)
+                    .start();
+                }}
+              />
             </h1>
             <p className="lead my-4">
               Blending creativity and technical expertise to build engaging web
@@ -54,7 +58,7 @@ function HeroSection(props) {
               </a>
             </div>
           </div>
-          <div className="col-md-5 text-center d-md-block">
+          <div className="col-md-5 text-center d-none d-md-block">
             <img
               className="image-fluid"
               src={"./assets/hero-pic.svg"}
