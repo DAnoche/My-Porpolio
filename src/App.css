@@ -25,6 +25,10 @@
   border-top: var(--textColorHighlight) solid 2px;
 }
 
+.nav-ul-dark a:focus {
+  color: var(--secondaryColor);
+}
+
 .nav-theme-icon {
   color: var(--textColor);
   cursor: pointer;
