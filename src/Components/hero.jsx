@@ -27,18 +27,18 @@ function HeroSection(props) {
                 }}
               />
             </h1>
-            <p className="lead my-4">
+            <p className="hero-paragraphs lead my-4">
               Blending creativity and technical expertise to build engaging web
               applications.
             </p>
             <div className="hero-links d-flex justify-contents-center align-items-center">
-              <a className="btn btn-primary btn-lg me-3" href="#">
-                Download CV
-              </a>
+              <button className="hero-btn me-3">
+                <i className="fas fa-download hero-download" /> Download CV
+              </button>
               <a href="https://www.facebook.com/DietherNoche" target="_blank">
                 <FontAwesomeIcon
                   icon={["fab", "facebook"]}
-                  className="hero-social-links me-2"
+                  className="hero-social-links me-3"
                 />
               </a>
               <a
@@ -47,13 +47,13 @@ function HeroSection(props) {
               >
                 <FontAwesomeIcon
                   icon={["fab", "linkedin"]}
-                  className="hero-social-links me-2"
+                  className="hero-social-links me-3"
                 />
               </a>
               <a href="https://github.com/DAnoche" target="_blank">
                 <FontAwesomeIcon
                   icon={["fab", "github"]}
-                  className="hero-social-links me-2"
+                  className="hero-social-links me-3"
                 />
               </a>
             </div>

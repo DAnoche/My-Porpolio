@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -152,15 +153,39 @@ label:active:after {
   color: var(--textColor);
 }
 
+.hero-paragraphs {
+  color: var(--textColor);
+}
+
 .hero-header:hover {
   color: var(--secondaryColor);
 }
 
-.hero-links a:hover {
-  scale: 0.75;
+.hero-social-links:hover {
+  scale: 1.5;
+  color: dodgerblue;
 }
 
 .hero-social-links {
   font-size: 1.5em;
   color: var(--textColor);
+}
+
+.hero-btn {
+  padding: 0.5em;
+  background-color: var(--secondaryColor);
+  border: none;
+  color: #eee;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.hero-btn:hover {
+  background-color: dodgerblue;
+  border-radius: 20px;
+}
+
+.hero-download {
+  background: transparent;
 }
