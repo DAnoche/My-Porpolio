@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
@@ -16,8 +16,19 @@ function Navbar() {
   };
 
   const toggleTheme = () => {
-    setTheme(theme === "dark" ? "light" : "dark");
+    const updatedTheme = theme === "dark" ? "light" : "dark";
+    setTheme(updatedTheme);
+    document.documentElement.setAttribute("data-theme", updatedTheme);
+    localStorage.setItem("theme", updatedTheme);
   };
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      setTheme(savedTheme);
+      document.documentElement.setAttribute("data-theme", savedTheme);
+    }
+  }, []);
 
   return (
     <nav className={`navbar navbar-expand-md mt-3 ${theme}`}>

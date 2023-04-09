@@ -6,16 +6,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-:root {
-  --mainColor: #141414;
-  --mainColorLight: #003d82;
-  --secondaryColor: #0c53a6;
-  --textColor: #eee;
-  --textColorHighlight: #2b6abc;
-}
-
 /* Navbar */
-
 .nav-logo {
   color: var(--textColor);
 }
@@ -26,6 +17,7 @@
 
 .nav-ul-dark a {
   color: var(--textColor);
+  background-color: transparent;
 }
 
 .nav-ul-dark a:hover {
