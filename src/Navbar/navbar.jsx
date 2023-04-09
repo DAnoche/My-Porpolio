@@ -53,16 +53,20 @@ function Navbar(props) {
                 CONTACT
               </a>
             </li>
-            <li
-              className="nav-item d-flex justify-contents-start align-items-center"
-              onClick={props.toggleTheme}
-            >
-              <span className="nav-theme-icon">
+            <li className="nav-item d-flex justify-contents-start align-items-center">
+              <span className="nav-theme-icon me-1">
                 <FontAwesomeIcon
                   icon={props.theme === "dark" ? faMoon : faSun}
                 />
                 &nbsp;{props.theme === "dark" ? "Dark" : "Light"}
               </span>
+              <input
+                type="checkbox"
+                id="switch"
+                checked={props.theme === "dark"}
+                onChange={props.toggleTheme}
+              />
+              <label for="switch"></label>
             </li>
           </ul>
         </div>
