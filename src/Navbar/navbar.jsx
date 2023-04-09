@@ -6,6 +6,11 @@ import {
   faMoon,
   faSun,
 } from "@fortawesome/free-solid-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+
+library.add(fab, fas);
 
 function Navbar(props) {
   const [collapsed, setCollapsed] = useState(true);
@@ -53,7 +58,7 @@ function Navbar(props) {
                 CONTACT
               </a>
             </li>
-            <li className="nav-theme-icon nav-item d-flex justify-contents-center align-items-center">
+            <li className="nav-theme-icon nav-item d-flex justify-contents-center align-items-center mb-5 mb-md-0">
               <span className="me-1">
                 <FontAwesomeIcon
                   icon={props.theme === "dark" ? faMoon : faSun}
@@ -69,6 +74,70 @@ function Navbar(props) {
               <label for="switch"></label>
             </li>
           </ul>
+          {/* Social Links and Contact Info */}
+          <div className="nav-social text-center d-block d-md-none">
+            <p className="lead ms-2">My Social Links.</p>
+            <div class="nav-social container">
+              <div class="row">
+                <div class="col-md-12">
+                  <span class="d-block mb-3">
+                    <a
+                      href="https://www.facebook.com/DietherNoche"
+                      target="_blank"
+                    >
+                      <FontAwesomeIcon
+                        icon={["fab", "facebook"]}
+                        className="me-2"
+                      />
+                      Facebook
+                    </a>
+                  </span>
+                  <span class="d-block mb-3">
+                    <a
+                      href="https://www.linkedin.com/in/diether-noche-010356145/"
+                      target="_blank"
+                    >
+                      <FontAwesomeIcon
+                        icon={["fab", "linkedin"]}
+                        className="me-2"
+                      />
+                      LinkedIn
+                    </a>
+                  </span>
+                  <span class="d-block mb-3">
+                    <a href="https://github.com/DAnoche" target="_blank">
+                      <FontAwesomeIcon
+                        icon={["fab", "github"]}
+                        className="me-2"
+                      />
+                      Github
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="nav-social text-center d-block d-md-none">
+            <p className="lead ms-2 mt-3">Contact Details.</p>
+            <div class="nav-social container">
+              <div class="row">
+                <div class="col-md-12">
+                  <span class="d-block mb-3">
+                    <FontAwesomeIcon icon={["fas", "envelope"]} />
+                    &nbsp;diether.noche@gmail.com
+                  </span>
+                  <span class="d-block mb-3">
+                    <FontAwesomeIcon icon={["fas", "phone"]} />
+                    &nbsp;(+63)955 055 5469
+                  </span>
+                  <span class="d-block mb-3">
+                    <FontAwesomeIcon icon={["fas", "map-marker-alt"]} />
+                    &nbsp;Batangas, Philippines
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
