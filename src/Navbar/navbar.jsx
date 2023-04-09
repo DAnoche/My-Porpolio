@@ -53,8 +53,8 @@ function Navbar(props) {
                 CONTACT
               </a>
             </li>
-            <li className="nav-item d-flex justify-contents-start align-items-center">
-              <span className="nav-theme-icon me-1">
+            <li className="nav-theme-icon nav-item d-flex justify-contents-center align-items-center">
+              <span className="me-1">
                 <FontAwesomeIcon
                   icon={props.theme === "dark" ? faMoon : faSun}
                 />

@@ -51,9 +51,16 @@
   .nav-theme-icon {
     border-top: 1px solid var(--textColorHighlight);
     width: 100%;
-    margin-top: 1.25em;
-    padding: 0.5em;
+    margin-top: 1.5em;
+    padding: 1em;
+    justify-content: center;
+  }
+
+  .navbar-collapse ul {
     text-align: center;
+    border-top: 1px solid var(--textColorHighlight);
+    margin-top: 1.5em;
+    padding: 0.5em;
   }
 }
 
