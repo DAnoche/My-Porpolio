@@ -35,45 +35,64 @@ function AboutSection(props) {
               innovative design.
             </p>
           </motion.div>
-          <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card card-custom bg-white border-0">
-                <div class="card-body">
-                  <h4 class="card-title">Card title 1</h4>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Blanditiis ad iusto molestias excepturi non, vero dolores
-                    sint vitae rem in hic fugit exercitationem repellat,
-                    voluptatem at asperiores aspernatur harum quas.
-                  </p>
-                </div>
+          <div className="about-techs">
+            <div className="container-lg">
+              <div className="text-center text-light">
+                <h2>Tech Stacks</h2>
+                <p className="lead">
+                  What other mountaineers thought about the mountain.
+                </p>
+                <hr className="featurette-divider" />
               </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card card-custom bg-white border-0">
-                <div class="card-body">
-                  <h4 class="card-title">Card title 2</h4>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Blanditiis ad iusto molestias excepturi non, vero dolores
-                    sint vitae rem in hic fugit exercitationem repellat,
-                    voluptatem at asperiores aspernatur harum quas.
-                  </p>
+            <div className="row">
+              <div className="col-lg-4 col-md-6 mb-4 mt-3">
+                <div className="card card-custom border-0">
+                  <div className="card-body">
+                    <h4 className="card-title">Languages</h4>
+                    <hr className="featurette-divider" />
+                    <ul className="card-text">
+                      <li>Javascript</li>
+                      <li>PHP</li>
+                      <li>C#</li>
+                      <li>SQL</li>
+                      <li>Visual Basic</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 mb-4">
-              <div class="card card-custom bg-white border-0">
-                <div class="card-body">
-                  <h4 class="card-title">Card title 3</h4>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Blanditiis ad iusto molestias excepturi non, vero dolores
-                    sint vitae rem in hic fugit exercitationem repellat,
-                    voluptatem at asperiores aspernatur harum quas.
-                  </p>
+              <div className="col-lg-4 col-md-6 mb-4 mt-3">
+                <div className="card card-custom border-0">
+                  <div className="card-body">
+                    <h4 className="card-title">Frameworks</h4>
+                    <hr className="featurette-divider" />
+                    <ul className="card-text">
+                      <li>React</li>
+                      <li>Node.js</li>
+                      <li>Laravel</li>
+                      <li>Express</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6 mb-4 mt-3">
+                <div className="card card-custom border-0">
+                  <div className="card-body">
+                    <h4 className="card-title">Other Techs</h4>
+                    <hr className="featurette-divider" />
+                    <ul className="card-text">
+                      <li>My SQL</li>
+                      <li>Git</li>
+                      <li>Postman</li>
+                      <li>Photoshop</li>
+                      <li>Illustrator</li>
+                      <li>AutoCAD</li>
+                      <li>SketchUp</li>
+                      <li>Lumion</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
