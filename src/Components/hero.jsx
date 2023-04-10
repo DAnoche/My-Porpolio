@@ -12,7 +12,7 @@ library.add(fab, fas);
 function HeroSection(props) {
   return (
     <section className={`hero ${props.theme}`}>
-      <div className="container p-3">
+      <div className="hero-main container p-3">
         <div className="row justify-content-center align-items-center text-center text-md-start">
           <motion.div
             initial={{ y: "100%", opacity: 0 }}

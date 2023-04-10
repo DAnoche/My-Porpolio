@@ -147,6 +147,10 @@ label:active:after {
   margin-top: 15em;
 }
 
+.hero-main {
+  margin-bottom: 5em;
+}
+
 .hero-header {
   color: var(--textColor);
 }
@@ -211,6 +215,79 @@ label:active:after {
 
 /* About Me */
 .about {
-  background-color: var(--mainColor);
+  background: linear-gradient(
+      45deg,
+      rgba(0, 61, 130, 0.8) 0%,
+      rgba(12, 83, 166, 0.8) 35%,
+      rgba(93, 192, 199, 0.8) 100%
+    ),
+    url("/public/assets/about-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   color: var(--textColor);
+}
+
+.about-intro {
+  background-color: rgba(93, 192, 199, 0.8);
+  text-align: center;
+  margin-top: 5em;
+  padding: 2em 15em 1em 15em;
+  border-radius: 25px;
+}
+
+.about-content {
+  background-color: var(--mainColor);
+  padding: 2em 10em 1em 10em;
+  margin-top: -8em;
+  border-radius: 25px;
+}
+
+.custom-about-shape .shape-fill {
+  fill: var(--mainColor);
+}
+
+/* Cards */
+.card-custom {
+  overflow: hidden;
+  min-height: 450px;
+  border-radius: 25px;
+}
+
+.card-custom-img {
+  height: 200px;
+  min-height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-color: inherit;
+}
+
+/* First border-left-width setting is a fallback */
+.card-custom-img::after {
+  position: absolute;
+  content: "";
+  top: 161px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top-width: 40px;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  border-left-width: 545px;
+  border-left-width: calc(575px - 5vw);
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: inherit;
+}
+
+.card-custom-avatar img {
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+  position: absolute;
+  top: 100px;
+  left: 1.25rem;
+  width: 100px;
+  height: 100px;
 }
