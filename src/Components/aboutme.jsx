@@ -35,47 +35,46 @@ function AboutSection(props) {
               innovative design.
             </p>
           </motion.div>
-          <div className="about-techs">
-            <div className="card card-custom bg-white border-0">
-              <div
-                className="card-img-top"
-                style={{
-                  backgroundImage:
-                    "url(http://res.cloudinary.com/d3/image/upload/c_scale,q_auto:good,w_1110/trianglify-v1-cs85g_cc5d2i.jpg)",
-                }}
-              ></div>
-              <div className="card-avatar">
-                <img
-                  className="img-fluid"
-                  src="http://res.cloudinary.com/d3/image/upload/c_pad,g_center,h_200,q_auto:eco,w_200/bootstrap-logo_u3c8dx.jpg"
-                  alt="Avatar"
-                />
+          <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card card-custom bg-white border-0">
+                <div class="card-body">
+                  <h4 class="card-title">Card title 1</h4>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Blanditiis ad iusto molestias excepturi non, vero dolores
+                    sint vitae rem in hic fugit exercitationem repellat,
+                    voluptatem at asperiores aspernatur harum quas.
+                  </p>
+                </div>
               </div>
-              <div className="card-body" style={{ overflowY: "auto" }}>
-                <h4 className="card-title">Card title</h4>
-                <p className="card-text">
-                  Card has minimum height set but will expand if more space is
-                  needed for card body content. You can use Bootstrap{" "}
-                  <a
-                    href="https://getbootstrap.com/docs/4.0/components/card/#card-decks"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    card-decks
-                  </a>{" "}
-                  to align multiple cards nicely in a row.
-                </p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card card-custom bg-white border-0">
+                <div class="card-body">
+                  <h4 class="card-title">Card title 2</h4>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Blanditiis ad iusto molestias excepturi non, vero dolores
+                    sint vitae rem in hic fugit exercitationem repellat,
+                    voluptatem at asperiores aspernatur harum quas.
+                  </p>
+                </div>
               </div>
-              <div
-                className="card-footer"
-                style={{ background: "inherit", borderColor: "inherit" }}
-              >
-                <a href="#" className="btn btn-primary">
-                  Option
-                </a>
-                <a href="#" className="btn btn-outline-primary">
-                  Other option
-                </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card card-custom bg-white border-0">
+                <div class="card-body">
+                  <h4 class="card-title">Card title 3</h4>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Blanditiis ad iusto molestias excepturi non, vero dolores
+                    sint vitae rem in hic fugit exercitationem repellat,
+                    voluptatem at asperiores aspernatur harum quas.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
