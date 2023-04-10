@@ -1,6 +1,7 @@
 import "./App.css";
 import Navbar from "./Components/navbar";
 import HeroSection from "./Components/hero";
+import AboutSection from "./Components/aboutme";
 import { useState, useEffect } from "react";
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
     <>
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <HeroSection theme={theme} toggleTheme={toggleTheme} />
+      <AboutSection theme={theme} toggleTheme={toggleTheme} />
     </>
   );
 }

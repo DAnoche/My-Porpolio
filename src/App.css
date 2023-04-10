@@ -143,12 +143,7 @@ label:active:after {
 /* Hero Section */
 .hero {
   background-color: var(--mainColor);
-  height: 50vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   overflow: hidden;
-  position: relative;
   margin-top: 15em;
 }
 
@@ -212,4 +207,10 @@ label:active:after {
 
 .custom-shape .shape-fill {
   fill: var(--textColorBlobs);
+}
+
+/* About Me */
+.about {
+  background-color: var(--mainColor);
+  color: var(--textColor);
 }
