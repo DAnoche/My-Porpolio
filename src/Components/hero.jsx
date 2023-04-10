@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import React from "react";
 import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,13 +9,15 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 library.add(fab, fas);
 
 function HeroSection(props) {
-  const [rotate, setRotate] = useState(false);
-
   return (
     <section className={`hero ${props.theme}`}>
       <div className="container p-3">
         <div className="row justify-content-center align-items-center text-center text-md-start">
-          <div className="col-md-5 text-center text-lg-start">
+          <motion.div
+            initial={{ y: "100%", opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            className="col-md-5 text-center text-lg-start"
+          >
             <h1 className="hero-header display-2 fw-bold">
               <Typewriter
                 onInit={(typewriter) => {
@@ -63,14 +65,12 @@ function HeroSection(props) {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
           <div className="col-md-5 text-center d-none d-lg-block">
             <motion.img
-              animate={{ rotate: rotate ? 360 : 0 }}
-              onClick={() => {
-                setRotate(!rotate);
-              }}
-              whileHover={{ x: 10 }}
+              initial={{ x: "100%", opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              whileHover={{ rotate: 5 }}
               className="image-fluid"
               src={"./assets/hero-pic.svg"}
               alt="Web Developer"

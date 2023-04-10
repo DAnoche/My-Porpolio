@@ -45,7 +45,9 @@ function Navbar(props) {
           </span>
         </motion.button>
         <div
-          className={`collapse navbar-collapse ${collapsed ? "" : "show"}`}
+          className={`collapse navbar-collapse ${collapsed ? "" : "show"} ${
+            collapsed ? "" : props.theme === "dark" ? "bg-dark" : "bg-light"
+          }`}
           id="navbarNav"
         >
           <ul className="nav-ul-dark navbar-nav ms-auto">
