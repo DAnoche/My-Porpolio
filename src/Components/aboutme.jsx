@@ -4,20 +4,13 @@ function AboutSection(props) {
   return (
     <section id="About-me" className={`about ${props.theme}`}>
       <div className="container">
-        <h1>Hello world</h1>
+        <h1>Hi, I'm Diether Noche</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam
-          minima accusamus, illo ut repellendus soluta nisi dolore dolorum nihil
-          unde corporis adipisci officiis deleniti minus aperiam nulla? Illum
-          fugiat molestias natus, quia vitae non id officia temporibus eaque,
-          maiores atque reiciendis alias minima! Culpa mollitia nihil, ipsam
-          quasi id deserunt accusamus, saepe, adipisci expedita incidunt earum.
-          Sapiente, repellat qui atque quisquam recusandae, adipisci in
-          excepturi, sit veritatis modi quo repellendus laborum sint labore
-          tempora sed ullam. Odit rerum illum nam iure iusto, inventore atque
-          placeat asperiores, deleniti nisi hic exercitationem necessitatibus ut
-          esse repudiandae cum! Incidunt dignissimos consequatur voluptatum
-          neque.
+          I'm a recent graduate from a Full Stack Web Development bootcamp. I
+          have a passion for building beautiful, responsive websites and is
+          eager to put my skills to work in the industry. My goal is to create
+          seamless user experiences through clean, efficient code and innovative
+          design.
         </p>
       </div>
     </section>

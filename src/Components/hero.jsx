@@ -23,7 +23,7 @@ function HeroSection(props) {
               <Typewriter
                 onInit={(typewriter) => {
                   typewriter
-                    .typeString("Hi!, I`m DIETHER,")
+                    .typeString("Hello there, I'm a")
                     .pauseFor(1000)
                     .deleteAll()
                     .typeString("Front End Developer.")
