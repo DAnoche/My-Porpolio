@@ -292,3 +292,19 @@ label:active:after {
 .slick-dots li button:before {
   color: var(--textColor) !important;
 }
+
+/* Contact */
+.contact {
+  background: linear-gradient(
+      45deg,
+      rgba(0, 61, 130, 0.8) 0%,
+      rgba(12, 83, 166, 0.8) 35%,
+      rgba(93, 192, 199, 0.8) 100%
+    ),
+    url("/public/assets/contact-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--textColor);
+}
