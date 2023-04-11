@@ -275,3 +275,16 @@ label:active:after {
 }
 
 /* Projects */
+.project {
+  background-color: var(--mainColor);
+  color: var(--textColor);
+}
+
+.slick-next:before,
+.slick-prev:before {
+  color: var(--textColor) !important;
+}
+
+.slick-dots li button:before {
+  color: var(--textColor) !important;
+}
