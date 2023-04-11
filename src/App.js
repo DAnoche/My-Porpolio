@@ -3,6 +3,7 @@ import Navbar from "./Components/navbar";
 import HeroSection from "./Components/hero";
 import AboutSection from "./Components/aboutme";
 import ProjectSection from "./Components/projects";
+import ContactSection from "./Components/contact";
 import { useState, useEffect } from "react";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
       <HeroSection theme={theme} toggleTheme={toggleTheme} />
       <AboutSection theme={theme} toggleTheme={toggleTheme} />
       <ProjectSection theme={theme} toggleTheme={toggleTheme} />
+      <ContactSection theme={theme} toggleTheme={toggleTheme} />
     </>
   );
 }
