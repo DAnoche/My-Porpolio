@@ -1,9 +1,25 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
+import React, { useRef, useState } from "react";
+import emailjs from "emailjs-com";
 import { motion } from "framer-motion";
+
+function CustomModal(props) {
+  return (
+    <div className="custom-modal">
+      <div className="custom-modal-content">
+        <h3>Message Sent!</h3>
+        <p>
+          Your message has been successfully sent. We will get back to you as
+          soon as possible.
+        </p>
+        <button onClick={props.onClose}>Close</button>
+      </div>
+    </div>
+  );
+}
 
 function ContactSection(props) {
   const form = useRef();
+  const [showModal, setShowModal] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -13,18 +29,20 @@ function ContactSection(props) {
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        process.env.REACT_APP_PUBLIC_KEY
+        process.env.REACT_APP_USER_ID
       )
       .then(
         (result) => {
           console.log(result.text);
           console.log("Message Sent");
+          setShowModal(true);
         },
         (error) => {
           console.log(error.text);
         }
       );
   };
+
   return (
     <section id="Contact" className={`contact py-5 ${props.theme}`}>
       <div className="about-intro container">
@@ -71,6 +89,7 @@ function ContactSection(props) {
             </form>
           </motion.div>
         </div>
+        {showModal && <CustomModal onClose={() => setShowModal(false)} />}
       </div>
     </section>
   );
