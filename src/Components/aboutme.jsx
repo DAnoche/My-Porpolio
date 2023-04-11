@@ -48,7 +48,7 @@ function AboutSection(props) {
             </motion.div>
           </div>
 
-          <div className="about-techs">
+          <div className="about-techs p-4">
             <div className="container-lg">
               <motion.div
                 initial={{ scale: 0, opacity: 0 }}
@@ -63,12 +63,12 @@ function AboutSection(props) {
                 <hr className="featurette-divider" />
               </motion.div>
             </div>
-            <div className="row">
+            <div className="row justify-content-center p-5">
               <motion.div
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.3 }}
-                className="col-lg-4 col-md-6 mb-4 mt-3"
+                className="col-lg-4 col-10 mb-4 mt-3"
               >
                 <div className="card card-custom border-0">
                   <img
@@ -94,7 +94,7 @@ function AboutSection(props) {
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.3 }}
-                className="col-lg-4 col-md-6 mb-4 mt-3"
+                className="col-lg-4 col-10 mb-4 mt-3"
               >
                 <div className="card card-custom border-0">
                   <img
@@ -119,7 +119,7 @@ function AboutSection(props) {
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.3 }}
-                className="col-lg-4 col-md-6 mb-4 mt-3"
+                className="col-lg-4 col-10 mb-4 mt-3"
               >
                 <div className="card card-custom border-0">
                   <img
