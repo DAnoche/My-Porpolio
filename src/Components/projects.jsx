@@ -79,20 +79,20 @@ function ProjectSection(props) {
             <div key={project.id} style={{ width: "300px" }}>
               <Card>
                 <Card.Img variant="top" src={project.image} />
-                <Card.Body className="text-center">
+                <Card.Body className="project-body text-center">
                   <Card.Title>{project.title}</Card.Title>
                   <Card.Text>{project.description}</Card.Text>
                   <Button
-                    className="mx-1"
-                    variant="primary"
+                    className="m-1"
+                    variant="success"
                     href={project.link}
                     target="_blank"
                   >
                     <i class="fas fa-external-link-alt" /> View Demo
                   </Button>
                   <Button
-                    className="mx-1"
-                    variant="secondary"
+                    className="m-1"
+                    variant="dark"
                     href={project.gitlink}
                     target="_blank"
                   >

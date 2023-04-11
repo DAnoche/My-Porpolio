@@ -280,6 +280,10 @@ label:active:after {
   color: var(--textColor);
 }
 
+.project-body {
+  color: black !important;
+}
+
 .slick-next:before,
 .slick-prev:before {
   color: var(--textColor) !important;
