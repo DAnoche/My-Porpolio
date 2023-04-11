@@ -5,6 +5,7 @@ import AboutSection from "./Components/aboutme";
 import ProjectSection from "./Components/projects";
 import ContactSection from "./Components/contact";
 import Footer from "./Components/footer";
+import BackToTop from "./Components/backtotop";
 import { useState, useEffect } from "react";
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
       <ProjectSection theme={theme} toggleTheme={toggleTheme} />
       <ContactSection theme={theme} toggleTheme={toggleTheme} />
       <Footer theme={theme} toggleTheme={toggleTheme} />
+      <BackToTop theme={theme} toggleTheme={toggleTheme} />
     </>
   );
 }
