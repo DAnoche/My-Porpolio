@@ -26,7 +26,7 @@ function AboutSection(props) {
               transition={{ duration: 0.3 }}
               className="about-content row justify-content-center align-self-center pt-3"
             >
-              <div className="col-10 col-lg-5">
+              <div className="col-12 col-lg-5">
                 <img
                   src="assets/DA-pic.jpg"
                   alt="profile"
@@ -63,12 +63,12 @@ function AboutSection(props) {
                 <hr className="featurette-divider" />
               </motion.div>
             </div>
-            <div className="row justify-content-center px-5">
+            <div className="row justify-content-center px-0 px-md-5">
               <motion.div
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.3 }}
-                className="col-lg-4 col-10 mb-4 mt-3"
+                className="col-lg-4 col-12 mb-4 mt-3"
               >
                 <div className="card card-custom border-0">
                   <img
@@ -94,7 +94,7 @@ function AboutSection(props) {
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.3 }}
-                className="col-lg-4 col-10 mb-4 mt-3"
+                className="col-lg-4 col-12 mb-4 mt-3"
               >
                 <div className="card card-custom border-0">
                   <img
@@ -119,7 +119,7 @@ function AboutSection(props) {
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.3 }}
-                className="col-lg-4 col-10 mb-4 mt-3"
+                className="col-lg-4 col-12 mb-4 mt-3"
               >
                 <div className="card card-custom border-0">
                   <img

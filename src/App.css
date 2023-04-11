@@ -239,7 +239,13 @@ input:checked + label:after {
   background-color: var(--mainColor);
   margin-top: -5em;
   border-radius: 25px;
-  width: 65%;
+  width: 56%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .about-content {
+    width: 75%;
+  }
 }
 
 .about-techs {
