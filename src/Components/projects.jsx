@@ -2,15 +2,18 @@ import React from "react";
 import { motion } from "framer-motion";
 import Slider from "react-slick";
 import { Card, Button } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function ProjectSection(props) {
   const settings = {
     dots: true,
     fade: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
   };
 
   const projects = [
@@ -18,7 +21,7 @@ function ProjectSection(props) {
       id: 1,
       title: "Gon's Dispo Vape Shop",
       image: "assets/vapeshop.jpg",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: "An E-Commerce website, for Electronic Cigarettes.",
       link: "https://gonsdispovape.shop/",
       gitlink: "https://github.com/DAnoche/team-1-caps",
     },
@@ -26,7 +29,8 @@ function ProjectSection(props) {
       id: 2,
       title: "South Trails",
       image: "assets/southtrails.jpg",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description:
+        "Informative platform for different Mountain Ranges in the Southern Luzon.",
       link: "https://doubtful-moth-sweatshirt.cyclic.app/login",
       gitlink: "https://github.com/DAnoche/south-trails",
     },
@@ -34,7 +38,7 @@ function ProjectSection(props) {
       id: 3,
       title: "Fusion Drafts",
       image: "assets/fusiondrafts.jpg",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description: "Portpolio for House Designs.",
       link: "https://danoche.github.io/fusion-drafts/index.html",
       gitlink: "https://github.com/DAnoche/fusion-drafts",
     },
@@ -42,7 +46,8 @@ function ProjectSection(props) {
       id: 4,
       title: "Southern Trails",
       image: "assets/southerntrails.jpg",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      description:
+        "Promotional Page for Mount Talamitam Trail, Located at Nasugbu, Batangas.",
       link: "https://danoche.github.io/WD32P-MP1/",
       gitlink: "https://github.com/DAnoche/WD32P-MP1",
     },
@@ -63,19 +68,38 @@ function ProjectSection(props) {
         <hr className="featurette-divider" />
       </motion.div>
 
-      <div className="container carousel">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.3 }}
+        className="container carousel"
+      >
         <Slider {...settings}>
           {projects.map((project) => (
             <div key={project.id} style={{ width: "300px" }}>
               <Card>
                 <Card.Img variant="top" src={project.image} />
-                <Card.Body>
+                <Card.Body className="text-center">
                   <Card.Title>{project.title}</Card.Title>
                   <Card.Text>{project.description}</Card.Text>
-                  <Button variant="primary" href={project.link}>
-                    View Demo
+                  <Button
+                    className="mx-1"
+                    variant="primary"
+                    href={project.link}
+                    target="_blank"
+                  >
+                    <i class="fas fa-external-link-alt" /> View Demo
                   </Button>
-                  <Button variant="secondary" href={project.link}>
+                  <Button
+                    className="mx-1"
+                    variant="secondary"
+                    href={project.gitlink}
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon
+                      icon={["fab", "github"]}
+                      className="me-2"
+                    />
                     View on Github
                   </Button>
                 </Card.Body>
@@ -83,7 +107,7 @@ function ProjectSection(props) {
             </div>
           ))}
         </Slider>
-      </div>
+      </motion.div>
     </section>
   );
 }
