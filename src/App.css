@@ -230,8 +230,6 @@ label:active:after {
 .about-intro {
   background-color: rgba(93, 192, 199, 0.8);
   text-align: center;
-  margin-top: 5em;
-  padding: 2em 15em 1em 15em;
   border-radius: 25px;
 }
 
@@ -239,10 +237,11 @@ label:active:after {
   background-color: var(--mainColor);
   margin-top: -8em;
   border-radius: 25px;
+  width: 65%;
 }
 
 .about-techs {
-  margin-top: 3em;
+  margin-top: 2.5em;
 }
 
 .custom-about-shape .shape-fill {
