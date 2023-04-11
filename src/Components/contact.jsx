@@ -4,22 +4,40 @@ import { motion } from "framer-motion";
 function ContactSection(props) {
   return (
     <section id="Contact" className={`contact py-5 ${props.theme}`}>
-      <div className="container">
-        <h1>Hi, Im Contact</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta
-          aliquam et qui! Nisi ad molestiae quae, molestias laudantium nihil
-          harum, ipsam dolore incidunt voluptate consectetur odio quo voluptates
-          libero ab, deleniti facere unde cupiditate. Commodi necessitatibus
-          maxime ex iure eos earum! Blanditiis dignissimos aliquam explicabo
-          tempore amet culpa dolores placeat commodi quia! Perspiciatis natus
-          culpa voluptas nesciunt, consequuntur pariatur animi commodi
-          necessitatibus iusto quibusdam ad doloremque earum eaque repellat
-          labore laboriosam aliquid voluptatibus quia est qui itaque. Quibusdam
-          cupiditate animi eius est ipsum molestiae tempora corporis asperiores
-          reprehenderit, maxime doloremque autem fugiat id atque, doloribus et
-          consequuntur quia quidem officiis.
-        </p>
+      <div className="about-intro container">
+        <motion.div
+          initial={{ scale: 0, opacity: 0, y: "-100%" }}
+          whileInView={{ scale: 1, opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+          className="container text-center pt-5"
+        >
+          <h2 className="text-light">
+            <i className="fas fa-comments" />
+            &nbsp;Write me a message.
+          </h2>
+          <p className="text-light lead">For additional inquiries.</p>
+          <hr className="featurette-divider text-light" />
+        </motion.div>
+
+        {/* Contact Form */}
+        <div className="row justify-content-center align-items-center text-center text-md-start py-5">
+          <div className="col-md-5 text-center d-none d-lg-block">
+            <motion.img
+              initial={{ y: "100%", opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.3 }}
+              whileHover={{ rotate: 5 }}
+              className="image-fluid"
+              src={"assets/contact.svg"}
+              alt="Web Developer"
+            />
+          </div>
+          <motion.div
+            initial={{ y: "100%", opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            className="col-md-5 text-center text-lg-start"
+          ></motion.div>
+        </div>
       </div>
     </section>
   );

@@ -88,7 +88,7 @@ function ProjectSection(props) {
                     href={project.link}
                     target="_blank"
                   >
-                    <i class="fas fa-external-link-alt" /> View Demo
+                    <i className="fas fa-external-link-alt" /> View Demo
                   </Button>
                   <Button
                     className="m-1"
