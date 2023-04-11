@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import emailjs from "emailjs-com";
+import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
 
 function CustomModal(props) {
@@ -29,7 +29,7 @@ function ContactSection(props) {
         process.env.REACT_APP_SERVICE_ID,
         process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        process.env.REACT_APP_USER_ID
+        process.env.REACT_APP_PUBLIC_KEY
       )
       .then(
         (result) => {
@@ -67,7 +67,6 @@ function ContactSection(props) {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.3 }}
-              whileHover={{ rotate: 5 }}
               className="image-fluid"
               src={"assets/contact.svg"}
               alt="Web Developer"
