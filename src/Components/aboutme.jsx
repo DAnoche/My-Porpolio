@@ -19,7 +19,7 @@ function AboutSection(props) {
       </div>
       <div className="container">
         <div className="about-intro">
-          <div className="container d-flex justify-content-center">
+          <div className="container d-flex justify-content-center mt-5">
             <motion.div
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}

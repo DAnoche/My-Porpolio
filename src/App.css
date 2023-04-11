@@ -235,7 +235,7 @@ label:active:after {
 
 .about-content {
   background-color: var(--mainColor);
-  margin-top: -8em;
+  margin-top: -5em;
   border-radius: 25px;
   width: 65%;
 }
