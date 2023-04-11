@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function AboutSection(props) {
   return (
-    <section id="About-me" className={`about ${props.theme}`}>
+    <section id="About-me" className={`about pb-5 ${props.theme}`}>
       <div className="custom-about-shape">
         <svg
           data-name="Layer 1"
@@ -48,7 +48,7 @@ function AboutSection(props) {
             </motion.div>
           </div>
 
-          <div className="about-techs p-4">
+          <div className="about-techs px-4 pb-4 mb-3">
             <div className="container-lg">
               <motion.div
                 initial={{ scale: 0, opacity: 0 }}
@@ -63,7 +63,7 @@ function AboutSection(props) {
                 <hr className="featurette-divider" />
               </motion.div>
             </div>
-            <div className="row justify-content-center p-5">
+            <div className="row justify-content-center px-5">
               <motion.div
                 initial={{ scale: 0, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
