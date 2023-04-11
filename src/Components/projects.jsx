@@ -1,18 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 function ProjectSection(props) {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-  };
-
   return (
     <section id="Project" className={`project py-5 ${props.theme}`}>
       <motion.div
@@ -28,30 +17,7 @@ function ProjectSection(props) {
         <hr className="featurette-divider" />
       </motion.div>
 
-      <div className="container carousel">
-        <Slider {...settings}>
-          <div>
-            <img src="https://placeimg.com/640/480/animals" alt="Card 1" />
-            <h3>Card 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-          <div>
-            <img src="https://placeimg.com/640/480/architecture" alt="Card 2" />
-            <h3>Card 2</h3>
-            <p>
-              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-          </div>
-          <div>
-            <img src="https://placeimg.com/640/480/nature" alt="Card 3" />
-            <h3>Card 3</h3>
-            <p>
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris.
-            </p>
-          </div>
-        </Slider>
-      </div>
+      <div className="container carousel"></div>
     </section>
   );
 }
