@@ -312,3 +312,9 @@ input:checked + label:after {
 .contact-check {
   font-size: 5em;
 }
+
+/* Footer */
+.footer {
+  background-color: var(--mainColor);
+  color: var(--textColor);
+}

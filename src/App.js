@@ -4,6 +4,7 @@ import HeroSection from "./Components/hero";
 import AboutSection from "./Components/aboutme";
 import ProjectSection from "./Components/projects";
 import ContactSection from "./Components/contact";
+import Footer from "./Components/footer";
 import { useState, useEffect } from "react";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
       <AboutSection theme={theme} toggleTheme={toggleTheme} />
       <ProjectSection theme={theme} toggleTheme={toggleTheme} />
       <ContactSection theme={theme} toggleTheme={toggleTheme} />
+      <Footer theme={theme} toggleTheme={toggleTheme} />
     </>
   );
 }
