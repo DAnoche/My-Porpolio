@@ -37,21 +37,36 @@ function AboutSection(props) {
           </motion.div>
           <div className="about-techs">
             <div className="container-lg">
-              <div className="text-center text-light">
+              <motion.div
+                initial={{ scale: 0, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.3 }}
+                className="text-center text-light"
+              >
                 <h2>Tech Stacks</h2>
                 <p className="lead">
-                  What other mountaineers thought about the mountain.
+                  Equipped with the latest trends in the Industry.
                 </p>
                 <hr className="featurette-divider" />
-              </div>
+              </motion.div>
             </div>
             <div className="row">
-              <div className="col-lg-4 col-md-6 mb-4 mt-3">
+              <motion.div
+                initial={{ scale: 0, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.3 }}
+                className="col-lg-4 col-md-6 mb-4 mt-3"
+              >
                 <div className="card card-custom border-0">
+                  <img
+                    className="card-img-top"
+                    src="assets/card-1.jpg"
+                    alt="Card image cap"
+                  />
                   <div className="card-body">
                     <h4 className="card-title">Languages</h4>
                     <hr className="featurette-divider" />
-                    <ul className="card-text">
+                    <ul className="card-text p-0">
                       <li>Javascript</li>
                       <li>PHP</li>
                       <li>C#</li>
@@ -60,14 +75,24 @@ function AboutSection(props) {
                     </ul>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="col-lg-4 col-md-6 mb-4 mt-3">
+              <motion.div
+                initial={{ scale: 0, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.3 }}
+                className="col-lg-4 col-md-6 mb-4 mt-3"
+              >
                 <div className="card card-custom border-0">
+                  <img
+                    className="card-img-top"
+                    src="assets/card-2.jpg"
+                    alt="Card image cap"
+                  />
                   <div className="card-body">
                     <h4 className="card-title">Frameworks</h4>
                     <hr className="featurette-divider" />
-                    <ul className="card-text">
+                    <ul className="card-text p-0">
                       <li>React</li>
                       <li>Node.js</li>
                       <li>Laravel</li>
@@ -75,14 +100,24 @@ function AboutSection(props) {
                     </ul>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="col-lg-4 col-md-6 mb-4 mt-3">
+              <motion.div
+                initial={{ scale: 0, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.3 }}
+                className="col-lg-4 col-md-6 mb-4 mt-3"
+              >
                 <div className="card card-custom border-0">
+                  <img
+                    className="card-img-top"
+                    src="assets/card-3.jpg"
+                    alt="Card image cap"
+                  />
                   <div className="card-body">
                     <h4 className="card-title">Other Techs</h4>
                     <hr className="featurette-divider" />
-                    <ul className="card-text">
+                    <ul className="card-text p-0">
                       <li>My SQL</li>
                       <li>Git</li>
                       <li>Postman</li>
@@ -94,7 +129,7 @@ function AboutSection(props) {
                     </ul>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>

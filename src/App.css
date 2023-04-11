@@ -257,3 +257,7 @@ label:active:after {
   overflow: hidden;
   min-height: 450px;
 }
+
+.card-text li {
+  list-style-type: none;
+}

@@ -77,7 +77,7 @@ function HeroSection(props) {
               animate={{ x: 0, opacity: 1 }}
               whileHover={{ rotate: 5 }}
               className="image-fluid"
-              src={"./assets/hero-pic.svg"}
+              src={"assets/hero-pic.svg"}
               alt="Web Developer"
             />
           </div>
