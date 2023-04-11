@@ -1,19 +1,31 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
+import Modal from "react-bootstrap/Modal";
+import Button from "react-bootstrap/Button";
 
 function CustomModal(props) {
+  const handleClose = () => {
+    props.onClose();
+  };
+
   return (
-    <div className="custom-modal">
-      <div className="custom-modal-content">
-        <h3>Message Sent!</h3>
+    <Modal show={true} onHide={handleClose}>
+      <Modal.Header closeButton>
+        <Modal.Title>Message Sent!</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
         <p>
           Your message has been successfully sent. We will get back to you as
           soon as possible.
         </p>
-        <button onClick={props.onClose}>Close</button>
-      </div>
-    </div>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button className="hero-btn" onClick={handleClose}>
+          Close
+        </Button>
+      </Modal.Footer>
+    </Modal>
   );
 }
 
