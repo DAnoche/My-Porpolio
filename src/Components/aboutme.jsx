@@ -23,18 +23,30 @@ function AboutSection(props) {
             initial={{ scale: 0, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.3 }}
-            className="about-content"
+            className="about-content row justify-content-center align-items-center pt-3"
           >
-            <h1 className="mb-4">Hi, I'm Diether Noche</h1>
-            <hr className="featurette-divider" />
-            <p>
-              I'm a recent graduate from a Full Stack Web Development bootcamp.
-              I have a passion for building beautiful, responsive websites and
-              is eager to put my skills to work in the industry. My goal is to
-              create seamless user experiences through clean, efficient code and
-              innovative design.
-            </p>
+            <div className="col-5">
+              <img
+                src="assets/DA-pic.jpg"
+                alt="profile"
+                className="img-fluid rounded mb-3"
+                width="200"
+                height="200"
+              />
+            </div>
+            <div className="col-5">
+              <h1 className="mb-4 te">Hi, I'm Diether</h1>
+              <hr className="featurette-divider" />
+              <p>
+                I'm a recent graduate from a Full Stack Web Development
+                bootcamp. I have a passion for building beautiful, responsive
+                websites and is eager to put my skills to work in the industry.
+                My goal is to create seamless user experiences through clean,
+                efficient code and innovative design.
+              </p>
+            </div>
           </motion.div>
+
           <div className="about-techs">
             <div className="container-lg">
               <motion.div
