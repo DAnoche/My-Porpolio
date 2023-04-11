@@ -105,7 +105,7 @@ input[type="checkbox"] {
   visibility: hidden;
 }
 
-label {
+.nav-label {
   cursor: pointer;
   width: 40px;
   height: 20px;
@@ -115,7 +115,7 @@ label {
   position: relative;
 }
 
-label:after {
+.nav-label:after {
   content: "";
   position: absolute;
   top: 5px;
@@ -136,7 +136,7 @@ input:checked + label:after {
   transform: translateX(-100%);
 }
 
-label:active:after {
+.nav-label:active:after {
   width: 40px;
 }
 

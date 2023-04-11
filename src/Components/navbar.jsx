@@ -79,7 +79,7 @@ function Navbar(props) {
                 checked={props.theme === "dark"}
                 onChange={props.toggleTheme}
               />
-              <label htmlFor="switch"></label>
+              <label className="nav-label" htmlFor="switch"></label>
             </li>
           </ul>
           {/* Social Links and Contact Info */}
