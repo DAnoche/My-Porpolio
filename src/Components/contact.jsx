@@ -15,10 +15,9 @@ function CustomModal(props) {
         <Modal.Title>Message Sent!</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <p>
-          Your message has been successfully sent. We will get back to you as
-          soon as possible.
-        </p>
+        <span className="contact-check d-flex justify-content-center align-items-center">
+          <i className="far fa-check-circle text-success" />
+        </span>
       </Modal.Body>
       <Modal.Footer>
         <Button className="hero-btn" onClick={handleClose}>
@@ -36,6 +35,20 @@ function ContactSection(props) {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    const name = form.current.user_name.value.trim();
+    const email = form.current.user_email.value.trim();
+    const message = form.current.message.value.trim();
+
+    if (!name || !email || !message) {
+      alert("Please fill in all fields.");
+      return;
+    }
+
+    if (!email.includes("@") || !email.includes(".com")) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
     emailjs
       .sendForm(
         process.env.REACT_APP_SERVICE_ID,
@@ -48,6 +61,7 @@ function ContactSection(props) {
           console.log(result.text);
           console.log("Message Sent");
           setShowModal(true);
+          form.current.reset();
         },
         (error) => {
           console.log(error.text);

@@ -308,3 +308,7 @@ input:checked + label:after {
   background-repeat: no-repeat;
   color: var(--textColor);
 }
+
+.contact-check {
+  font-size: 5em;
+}
