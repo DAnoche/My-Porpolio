@@ -17,30 +17,34 @@ function ProjectSection(props) {
     {
       id: 1,
       title: "Gon's Dispo Vape Shop",
-      image: "https://via.placeholder.com/150",
+      image: "assets/vapeshop.jpg",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       link: "https://gonsdispovape.shop/",
+      gitlink: "https://github.com/DAnoche/team-1-caps",
     },
     {
       id: 2,
       title: "South Trails",
-      image: "https://via.placeholder.com/150",
+      image: "assets/southtrails.jpg",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       link: "https://doubtful-moth-sweatshirt.cyclic.app/login",
+      gitlink: "https://github.com/DAnoche/south-trails",
     },
     {
       id: 3,
       title: "Fusion Drafts",
-      image: "https://via.placeholder.com/150",
+      image: "assets/fusiondrafts.jpg",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       link: "https://danoche.github.io/fusion-drafts/index.html",
+      gitlink: "https://github.com/DAnoche/fusion-drafts",
     },
     {
       id: 4,
-      title: "Project 4",
-      image: "https://via.placeholder.com/150",
+      title: "Southern Trails",
+      image: "assets/southerntrails.jpg",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      link: "#",
+      link: "https://danoche.github.io/WD32P-MP1/",
+      gitlink: "https://github.com/DAnoche/WD32P-MP1",
     },
   ];
 
@@ -69,7 +73,10 @@ function ProjectSection(props) {
                   <Card.Title>{project.title}</Card.Title>
                   <Card.Text>{project.description}</Card.Text>
                   <Button variant="primary" href={project.link}>
-                    Learn More
+                    View Demo
+                  </Button>
+                  <Button variant="secondary" href={project.link}>
+                    View on Github
                   </Button>
                 </Card.Body>
               </Card>
