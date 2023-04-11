@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/My-Porpolio/static/css/main.8a92bb8a.css",
+    "main.js": "/My-Porpolio/static/js/main.bfab6e00.js",
+    "static/media/about-bg.jpg": "/My-Porpolio/static/media/about-bg.3fe92b8ebc90a7f2d328.jpg",
+    "static/media/contact-bg.jpg": "/My-Porpolio/static/media/contact-bg.eba0a188cfee21e9b36e.jpg",
+    "static/media/Diether-Noche-CV.pdf": "/My-Porpolio/static/media/Diether-Noche-CV.a16a115a04a26ae4515b.pdf",
+    "index.html": "/My-Porpolio/index.html",
+    "main.8a92bb8a.css.map": "/My-Porpolio/static/css/main.8a92bb8a.css.map",
+    "main.bfab6e00.js.map": "/My-Porpolio/static/js/main.bfab6e00.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8a92bb8a.css",
+    "static/js/main.bfab6e00.js"
+  ]
+}
