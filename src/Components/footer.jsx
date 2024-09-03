@@ -7,6 +7,8 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 library.add(fab);
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="footer d-flex justify-content-center align-items-center">
       <footer className="container row text-center py-4">
@@ -17,7 +19,9 @@ function Footer() {
           >
             <span>&lt;/&gt; Diether Anthony Noche</span>
           </a>
-          <span className="mb-3 mb-md-0 ">© 2023</span>
+          <span className="mb-3 mb-md-0 ">
+            © <span className="currentYear">{currentYear}</span>
+          </span>
         </div>
         <div className="col-12">
           <hr className="featurette-divider" />
@@ -35,7 +39,7 @@ function Footer() {
             <motion.li whileHover={{ scale: 1.2, transition: 0.3 }}>
               <a
                 className="nav-link"
-                href="https://www.linkedin.com/in/diether-noche-010356145/"
+                href="https://www.linkedin.com/in/diether-anthony-noche-010356145/"
                 target="_blank"
               >
                 <FontAwesomeIcon icon={["fab", "linkedin"]} className="me-2" />
