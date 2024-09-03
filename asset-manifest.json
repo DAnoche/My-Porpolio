@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.c996833e.css",
-    "main.js": "/static/js/main.8417ca3a.js",
-    "static/media/about-bg.jpg": "/static/media/about-bg.3fe92b8ebc90a7f2d328.jpg",
-    "static/media/contact-bg.jpg": "/static/media/contact-bg.eba0a188cfee21e9b36e.jpg",
-    "static/media/Diether-Noche-CV.pdf": "/static/media/Diether-Noche-CV.705d38bc1d9357c6cff5.pdf",
-    "index.html": "/index.html",
-    "main.c996833e.css.map": "/static/css/main.c996833e.css.map",
-    "main.8417ca3a.js.map": "/static/js/main.8417ca3a.js.map"
+    "main.css": "/DAnoche/My-Porpolio/static/css/main.6ab171dd.css",
+    "main.js": "/DAnoche/My-Porpolio/static/js/main.5b662199.js",
+    "static/media/about-bg.jpg": "/DAnoche/My-Porpolio/static/media/about-bg.3fe92b8ebc90a7f2d328.jpg",
+    "static/media/contact-bg.jpg": "/DAnoche/My-Porpolio/static/media/contact-bg.eba0a188cfee21e9b36e.jpg",
+    "static/media/Diether-Noche-CV.pdf": "/DAnoche/My-Porpolio/static/media/Diether-Noche-CV.705d38bc1d9357c6cff5.pdf",
+    "index.html": "/DAnoche/My-Porpolio/index.html",
+    "main.6ab171dd.css.map": "/DAnoche/My-Porpolio/static/css/main.6ab171dd.css.map",
+    "main.5b662199.js.map": "/DAnoche/My-Porpolio/static/js/main.5b662199.js.map"
   },
   "entrypoints": [
-    "static/css/main.c996833e.css",
-    "static/js/main.8417ca3a.js"
+    "static/css/main.6ab171dd.css",
+    "static/js/main.5b662199.js"
   ]
 }
